@@ -4,7 +4,7 @@ jdk:
 notification:
   email:
     recipients:
-      - nobodyiam@gmail.com,lepdou@gmail.com
+      - sandisks555@gmail.com
     on_success: change
     on_failure: always
 
@@ -19,6 +19,8 @@ before_script:
 
 script:
   - mvn clean test jacoco:report
+  - ls
+  - pwd
 
 after_success:
   - codecov
